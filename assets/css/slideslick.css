@@ -1,0 +1,42 @@
+
+/* slide custom */
+.slick-dots{
+    bottom: -37px;
+}
+
+.slick-dots li button::before{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.slick-dots li.slick-active button:before{
+    color: var(--primary-color);
+}
+
+.slick-list {
+    z-index: 2;
+}
+
+/* slide comment */
+
+.comments .slick-prev,
+.comments .slick-next {
+  color: var(--black-color);
+  width: 5rem;
+  height: 5rem;
+}
+
+.comments .slick-prev {
+    left: -5rem;
+  }
+  
+  .comments .slick-next {
+    right: -5rem;
+  }
+  
+  .comments .slick-prev::before,
+  .comments .slick-next::before {
+    color: var(--primary-color);
+    font-size: 5rem;
+  }
+  
