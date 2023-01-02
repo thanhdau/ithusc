@@ -38,6 +38,12 @@ body {
 a {
   text-decoration: none;
 }
+em{
+  font-style: italic;
+}
+strong{
+  font-weight: 700;
+}
 img {
   display: block;
   width: 100%;
@@ -52,7 +58,6 @@ img {
   margin: 0 auto;
   padding: 0 2rem;
 }
-
 
 .text-clamp {
   display: -webkit-box;
@@ -128,4 +133,10 @@ img {
 }
 .padding20{
   padding: 20px 0;
+}
+.text-center{
+  text-align: center !important;
+}
+.text-justify{
+  text-align: justify;
 }
