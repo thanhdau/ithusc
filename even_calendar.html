@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch công tác</title>
+    <!-- carosel -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- Goolge font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&family=Khula:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- font-awesome link --> 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/slideslick.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!--Datetimepicker-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.css" integrity="sha512-bYPO5jmStZ9WI2602V2zaivdAnbAhtfzmxnEGh9RwtlI00I9s8ulGe4oBa5XxiC6tCITJH/QG70jswBhbLkxPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js" integrity="sha512-AIOTidJAcHBH2G/oZv9viEGXRqDNmfdPVPYOYKGy3fti0xIplnlgMHUGfuNRzC6FkzIo0iIxgFnr9RikFxK+sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="wrapper">
+            <div class="container header--inner">
+                <a href="" class="logo">
+                <img src="./assets/images/Untitled.png" alt="" class="logo__img" />
+                </a>
+                <nav class="navbar">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                    <a href="" class="navbar__item-link"
+                        ><i class="navbar__icon fa-solid fa-house-chimney"></i>
+                    </a>
+                    </li>
+                    <li class="navbar__item">
+                    <a href="" class="navbar__item-link active">
+                        <span>Giới thiệu</span>
+                        <i class="navbar__icon fa-sharp fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul class="sub--nav__list">
+                        <li class="sub--nav__item">
+                        <a href="" class="sub--nav__item-link">
+                            <i
+                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                            ></i>
+                            <span>Đào tạo</span>
+                        </a>
+                        </li>
+                        <li class="sub--nav__item ">
+                        <a href="" class="sub--nav__item-link">
+                            <i
+                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                            ></i>
+                            <span>Đội ngũ Giảng viên</span>
+                        </a>
+                        </li>
+                        <li class="sub--nav__item">
+                        <a href="" class="sub--nav__item-link sub--nav__item-active">
+                            <i
+                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                            ></i>
+                            <span>Cơ cấu tổ chức</span>
+                        </a>
+                        </li>
+                        <li class="navbar-2nd">
+                            <a href="" class="sub--nav__item-link">
+                                <i
+                                class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                                ></i>
+                                <span>Các bộ môn</span>
+                            </a>    
+                            <ul class="sub--nav__list-2nd nav_child-2nd">
+                                <li class="sub--nav__item">
+                                    <a href="" class="sub--nav__item-link">
+                                        <i
+                                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                                        ></i>
+                                        <span>Khoa học máy tính</span>
+                                    </a>                                   
+                                </li>
+                                <li class="sub--nav__item">
+                                    <a href="" class="sub--nav__item-link">
+                                        <i
+                                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                                        ></i>
+                                        <span>Công nghệ phần mềm</span>
+                                    </a>                                   
+                                </li>
+                                <li class="sub--nav__item">
+                                    <a href="" class="sub--nav__item-link">
+                                        <i
+                                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                                        ></i>
+                                        <span>Mạng & Truyền thông</span>
+                                    </a>                                   
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="navbar__item">
+                    <a href="" class="navbar__item-link"
+                        ><span>Đơn vị</span>
+                        <i class="navbar__icon fa-sharp fa-solid fa-angle-down"></i
+                    ></a>
+                    <ul class="sub--nav__list">
+                        <li class="sub--nav__item">
+                        <a href="" class="sub--nav__item-link">
+                            <i
+                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                            ></i>
+                            <span>Về nhà trường </span>
+                        </a>
+                        </li>
+                        <li class="sub--nav__item">
+                        <a href="" class="sub--nav__item-link">
+                            <i
+                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                            ></i>
+                            <span>Sứ mạng, Tầm nhìn và Giá trị cốt lõi</span>
+                        </a>
+                        </li>
+                        <li class="sub--nav__item">
+                        <a href="" class="sub--nav__item-link">
+                            <i
+                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                            ></i>
+                            <span>Triết lý giáo dục</span>
+                        </a>
+                        </li>
+                        <li class="sub--nav__item">
+                        <a href="" class="sub--nav__item-link">
+                            <i
+                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                            ></i>
+                            <span>Thông điệp từ Hiệu trưởng</span>
+                        </a>
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="navbar__item">
+                    <a href="" class="navbar__item-link"
+                        >Đào tạo
+                        <i class="navbar__icon fa-sharp fa-solid fa-angle-down"></i
+                    ></a>
+                    <ul class="sub--nav__list">
+                        <li class="sub--nav__item">
+                        <a href="" class="sub--nav__item-link">
+                            <i
+                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                            ></i>
+                            <span>Về nhà trường </span>
+                        </a>
+                        </li>
+                        <li class="sub--nav__item">
+                        <a href="" class="sub--nav__item-link">
+                            <i
+                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                            ></i>
+                            <span>Sứ mạng, Tầm nhìn và Giá trị cốt lõi</span>
+                        </a>
+                        </li>
+                        <li class="sub--nav__item">
+                        <a href="" class="sub--nav__item-link">
+                            <i
+                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                            ></i>
+                            <span>Triết lý giáo dục</span>
+                        </a>
+                        </li>
+                        <li class="sub--nav__item">
+                        <a href="" class="sub--nav__item-link">
+                            <i
+                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                            ></i>
+                            <span>Thông điệp từ Hiệu trưởng</span>
+                        </a>
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="navbar__item">
+                    <a href="" class="navbar__item-link"
+                        ><span>Nghiên cứu Khoa học</span>
+                        <i class="navbar__icon fa-sharp fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul class="sub--nav__list">
+                        <li class="sub--nav__item">
+                        <a href="" class="sub--nav__item-link">
+                            <i
+                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                            ></i>
+                            <span>Về nhà trường </span>
+                        </a>
+                        </li>
+                        <li class="sub--nav__item">
+                        <a href="" class="sub--nav__item-link">
+                            <i
+                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                            ></i>
+                            <span>Sứ mạng, Tầm nhìn và Giá trị cốt lõi</span>
+                        </a>
+                        </li>
+                        <li class="sub--nav__item">
+                        <a href="" class="sub--nav__item-link">
+                            <i
+                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                            ></i>
+                            <span>Triết lý giáo dục</span>
+                        </a>
+                        </li>
+                        <li class="sub--nav__item">
+                        <a href="" class="sub--nav__item-link">
+                            <i
+                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                            ></i>
+                            <span>Thông điệp từ Hiệu trưởng</span>
+                        </a>
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="navbar__item">
+                    <a href="" class="navbar__item-link"
+                        ><span>Hợp tác quốc tế</span>
+                        <i class="navbar__icon fa-sharp fa-solid fa-angle-down"></i
+                    ></a>
+                    <ul class="sub--nav__list">
+                        <li class="sub--nav__item">
+                        <a href="" class="sub--nav__item-link">
+                            <i
+                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                            ></i>
+                            <span>Về nhà trường </span>
+                        </a>
+                        </li>
+                        <li class="sub--nav__item">
+                        <a href="" class="sub--nav__item-link">
+                            <i
+                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                            ></i>
+                            <span>Sứ mạng, Tầm nhìn và Giá trị cốt lõi</span>
+                        </a>
+                        </li>
+                        <li class="sub--nav__item">
+                        <a href="" class="sub--nav__item-link">
+                            <i
+                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                            ></i>
+                            <span>Triết lý giáo dục</span>
+                        </a>
+                        </li>
+                        <li class="sub--nav__item">
+                        <a href="" class="sub--nav__item-link">
+                            <i
+                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                            ></i>
+                            <span>Thông điệp từ Hiệu trưởng</span>
+                        </a>
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="navbar__item">
+                    <a href="" class="navbar__item-link"><span>Sinh viên</span></a>
+                    </li>
+                    <li class="navbar__item">
+                    <a href="info_news.html" class="navbar__item-link"
+                        ><span>Tin tức</span>
+                        <i class="navbar__icon fa-sharp fa-solid fa-angle-down"></i
+                    ></a>
+                    <ul class="sub--nav__list">
+                        <li class="sub--nav__item">
+                        <a href="" class="sub--nav__item-link">
+                            <i
+                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                            ></i>
+                            <span>Thông báo</span>
+                        </a>
+                        </li>
+                        <li class="sub--nav__item">
+                        <a href="" class="sub--nav__item-link">
+                            <i
+                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                            ></i>
+                            <span>Sự kiện</span>
+                        </a>
+                        </li>
+                        <li class="sub--nav__item">
+                        <a href="" class="sub--nav__item-link">
+                            <i
+                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                            ></i>
+                            <span>Đào tạo</span>
+                        </a>
+                        </li>
+                        <li class="sub--nav__item">
+                        <a href="" class="sub--nav__item-link">
+                            <i
+                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                            ></i>
+                            <span>Khoa học công nghệ</span>
+                        </a>
+                        </li>
+                        <li class="sub--nav__item">
+                        <a href="" class="sub--nav__item-link">
+                            <i
+                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                            ></i>
+                            <span>Semina</span>
+                        </a>
+                        </li>
+                        <li class="sub--nav__item">
+                        <a href="" class="sub--nav__item-link">
+                            <i
+                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                            ></i>
+                            <span>Tuyển dụng</span>
+                        </a>
+                        </li>
+                    </ul>
+                    </li>
+                </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!--even calendar-->
+    <div class="even__calendar">
+        <div class="wrapper">
+            <div class="container">
+                <div class="even__calendar__content">
+                    <h1>LỊCH CÔNG TÁC</h1>
+                </div>
+                <div class="even__calendar--top">
+                    <form action="" class="select__even__calendar">
+                        <div class="left__select__calendar">
+                            <span>
+                                Từ ngày
+                            </span>
+                            <input type="text"  name="from-date" id="from-date" >
+                        </div>
+                        <div class="right__select__calendar">
+                            <span>
+                                Đến ngày
+                            </span>
+                            <input type="text"  name="to-date" id="to-date" >
+                        </div>
+                        <input type="submit" value="Xem" class="btn-vul">
+                    </form>
+                    <div class="even__calendar__manipul">
+                        <span>
+                            Thao tác khác:
+                        </span>
+                        <a class="btn-vul" href="">Xuất file</a>
+                    </div>
+                </div>
+                <div class="even__calendar-wrap">
+                    <div class="even__calendar--body">
+                        <div class="current-week">
+                            <div class="title__week">
+                                <h1>TUẦN HIỆN TẠI</h1>
+                            </div>
+                            <div class="current-week__table">
+                                <table class="even__calendar-table">
+                                    <tbody>
+                                        <tr class="col-headings__even__calendar">
+                                            <td style="width:10%">Ngày</td>
+                                            <td style="width:8%">Giờ</td>
+                                            <td style="width:30%">Nội dung</td>
+                                            <td style="width:30%">Thành phần</td>
+                                            <td style="width:12%">Địa điểm</td>
+                                            <td style="width:12%">Người chủ trì</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" style="text-align:center">
+                                                <strong>
+                                                    Thứ 2 <br>
+                                                    30/01/2023
+                                                </strong>
+                                            </td>
+                                            <td style="text-align:center">
+                                                07:00
+                                            </td>
+                                            <td style="line-height: 25px; font-weight:400;text-align: justify;">
+                                                <i class="fa-regular fa-calendar"></i>
+                                                Họp bàn tham gia Ngày hội khởi nghiệp Quốc gia HSSV lần thứ V,
+                                                 năm 2023 – SV.STARTUP-2023
+                                            </td>
+                                            <td style="line-height: 25px; font-weight:400;text-align: justify;">
+                                                Hiệu trưởng, PHT- TS. Phan Tuấn Anh, đại diện lãnh đạo Phòng ĐTĐH&CTSV,
+                                                 KHCN&HTQT, Trưởng khoa CNTT, Kiến trúc, Hóa học, Sinh học, Đ,ĐT&CNVL,
+                                                 các cá nhân có ý tưởng, sản phẩm khởi nghiệp giới thiệu tham gia.
+                                            </td>
+                                            <td style="text-align:center">
+                                                Phòng họp A2.06
+                                            </td>
+                                            <td style="text-align:center">
+                                                Hiệu trưởng
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                07:00
+                                            </td>
+                                            <td style="line-height: 25px; font-weight:400;text-align: justify;">
+                                                <i class="fa-regular fa-calendar"></i>
+                                                Họp bàn tham gia Ngày hội khởi nghiệp Quốc gia HSSV lần thứ V,
+                                                 năm 2023 – SV.STARTUP-2023
+                                            </td>
+                                            <td style="line-height: 25px; font-weight:400;text-align: justify;">
+                                                Hiệu trưởng, PHT- TS. Phan Tuấn Anh, đại diện lãnh đạo Phòng ĐTĐH&CTSV,
+                                                 KHCN&HTQT, Trưởng khoa CNTT, Kiến trúc, Hóa học, Sinh học, Đ,ĐT&CNVL,
+                                                 các cá nhân có ý tưởng, sản phẩm khởi nghiệp giới thiệu tham gia.
+                                            </td>
+                                            <td style="text-align:center">
+                                                Phòng họp A2.06
+                                            </td>
+                                            <td style="text-align:center">
+                                                Hiệu trưởng
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="1" style="text-align:center">
+                                                <strong>
+                                                    Thứ 3 <br>
+                                                    31/01/2023
+                                                </strong>
+                                            </td>
+                                            <td style="text-align:center">
+                                                07:00
+                                            </td>
+                                            <td style="line-height: 25px; font-weight:400;text-align: justify;">
+                                                <i class="fa-regular fa-calendar"></i>
+                                                Họp bàn tham gia Ngày hội khởi nghiệp Quốc gia HSSV lần thứ V,
+                                                 năm 2023 – SV.STARTUP-2023
+                                            </td>
+                                            <td style="line-height: 25px; font-weight:400;text-align: justify;">
+                                                Hiệu trưởng, PHT- TS. Phan Tuấn Anh, đại diện lãnh đạo Phòng ĐTĐH&CTSV,
+                                                 KHCN&HTQT, Trưởng khoa CNTT, Kiến trúc, Hóa học, Sinh học, Đ,ĐT&CNVL,
+                                                 các cá nhân có ý tưởng, sản phẩm khởi nghiệp giới thiệu tham gia.
+                                            </td>
+                                            <td style="text-align:center">
+                                                Phòng họp A2.06
+                                            </td>
+                                            <td style="text-align:center">
+                                                Hiệu trưởng
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="3" style="text-align:center">
+                                                <strong>
+                                                    Thứ 4 <br>
+                                                    01/02/2023
+                                                </strong>
+                                            </td>
+                                            <td style="text-align:center">
+                                                07:00
+                                            </td>
+                                            <td style="line-height: 25px; font-weight:400;text-align: justify;">
+                                                <i class="fa-regular fa-calendar"></i>
+                                                Họp bàn tham gia Ngày hội khởi nghiệp Quốc gia HSSV lần thứ V,
+                                                 năm 2023 – SV.STARTUP-2023
+                                            </td>
+                                            <td style="line-height: 25px; font-weight:400;text-align: justify;">
+                                                Hiệu trưởng, PHT- TS. Phan Tuấn Anh, đại diện lãnh đạo Phòng ĐTĐH&CTSV,
+                                                 KHCN&HTQT, Trưởng khoa CNTT, Kiến trúc, Hóa học, Sinh học, Đ,ĐT&CNVL,
+                                                 các cá nhân có ý tưởng, sản phẩm khởi nghiệp giới thiệu tham gia.
+                                            </td>
+                                            <td style="text-align:center">
+                                                Phòng họp A2.06
+                                            </td>
+                                            <td style="text-align:center">
+                                                Hiệu trưởng
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                07:00
+                                            </td>
+                                            <td style="line-height: 25px; font-weight:400;text-align: justify;">
+                                                <i class="fa-regular fa-calendar"></i>
+                                                Họp bàn tham gia Ngày hội khởi nghiệp Quốc gia HSSV lần thứ V,
+                                                 năm 2023 – SV.STARTUP-2023
+                                            </td>
+                                            <td style="line-height: 25px; font-weight:400;text-align: justify;">
+                                                Hiệu trưởng, PHT- TS. Phan Tuấn Anh, đại diện lãnh đạo Phòng ĐTĐH&CTSV,
+                                                 KHCN&HTQT, Trưởng khoa CNTT, Kiến trúc, Hóa học, Sinh học, Đ,ĐT&CNVL,
+                                                 các cá nhân có ý tưởng, sản phẩm khởi nghiệp giới thiệu tham gia.
+                                            </td>
+                                            <td style="text-align:center">
+                                                Phòng họp A2.06
+                                            </td>
+                                            <td style="text-align:center">
+                                                Hiệu trưởng
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                07:00
+                                            </td>
+                                            <td style="line-height: 25px; font-weight:400;text-align: justify;">
+                                                <i class="fa-regular fa-calendar"></i>
+                                                Họp bàn tham gia Ngày hội khởi nghiệp Quốc gia HSSV lần thứ V,
+                                                năm 2023 – SV.STARTUP-2023
+                                                <div class="attached__files-wrap">
+                                                    <div class="attached__files">
+                                                        <a href="">File đính kèm <i class="fa-solid fa-file"></i></a>
+                                                    </div>
+                                                    <div class="attached__files">
+                                                        <a href="">File đính kèm <i class="fa-solid fa-file"></i></a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td style="line-height: 25px; font-weight:400;text-align: justify;">
+                                                Hiệu trưởng, PHT- TS. Phan Tuấn Anh, đại diện lãnh đạo Phòng ĐTĐH&CTSV,
+                                                 KHCN&HTQT, Trưởng khoa CNTT, Kiến trúc, Hóa học, Sinh học, Đ,ĐT&CNVL,
+                                                 các cá nhân có ý tưởng, sản phẩm khởi nghiệp giới thiệu tham gia.
+                                            </td>
+                                            <td style="text-align:center">
+                                                Phòng họp A2.06
+                                            </td>
+                                            <td style="text-align:center">
+                                                Hiệu trưởng
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="next-week">
+                            <div class="title__week">
+                                <h1>TUẦN SAU (LỊCH DỰ KIẾN)</h1>
+                            </div>
+                            <div class="current-week__table">
+                                <table class="even__calendar-table">
+                                    <tbody>
+                                        <tr class="col-headings__even__calendar">
+                                            <td style="width:10%">Ngày</td>
+                                            <td style="width:8%">Giờ</td>
+                                            <td style="width:30%">Nội dung</td>
+                                            <td style="width:30%">Thành phần</td>
+                                            <td style="width:12%">Địa điểm</td>
+                                            <td style="width:12%">Người chủ trì</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" style="text-align:center">
+                                                <strong>
+                                                    Thứ 2 <br>
+                                                    30/01/2023
+                                                </strong>
+                                            </td>
+                                            <td style="text-align:center">
+                                                07:00
+                                            </td>
+                                            <td style="line-height: 25px; font-weight:400;text-align: justify;">
+                                                <i class="fa-regular fa-calendar"></i>
+                                                Họp bàn tham gia Ngày hội khởi nghiệp Quốc gia HSSV lần thứ V,
+                                                 năm 2023 – SV.STARTUP-2023
+                                            </td>
+                                            <td style="line-height: 25px; font-weight:400;text-align: justify;">
+                                                Hiệu trưởng, PHT- TS. Phan Tuấn Anh, đại diện lãnh đạo Phòng ĐTĐH&CTSV,
+                                                 KHCN&HTQT, Trưởng khoa CNTT, Kiến trúc, Hóa học, Sinh học, Đ,ĐT&CNVL,
+                                                 các cá nhân có ý tưởng, sản phẩm khởi nghiệp giới thiệu tham gia.
+                                            </td>
+                                            <td style="text-align:center">
+                                                Phòng họp A2.06
+                                            </td>
+                                            <td style="text-align:center">
+                                                Hiệu trưởng
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                07:00
+                                            </td>
+                                            <td style="line-height: 25px; font-weight:400;text-align: justify;">
+                                                <i class="fa-regular fa-calendar"></i>
+                                                Họp bàn tham gia Ngày hội khởi nghiệp Quốc gia HSSV lần thứ V,
+                                                 năm 2023 – SV.STARTUP-2023
+                                            </td>
+                                            <td style="line-height: 25px; font-weight:400;text-align: justify;">
+                                                Hiệu trưởng, PHT- TS. Phan Tuấn Anh, đại diện lãnh đạo Phòng ĐTĐH&CTSV,
+                                                 KHCN&HTQT, Trưởng khoa CNTT, Kiến trúc, Hóa học, Sinh học, Đ,ĐT&CNVL,
+                                                 các cá nhân có ý tưởng, sản phẩm khởi nghiệp giới thiệu tham gia.
+                                            </td>
+                                            <td style="text-align:center">
+                                                Phòng họp A2.06
+                                            </td>
+                                            <td style="text-align:center">
+                                                Hiệu trưởng
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" style="text-align:center">
+                                                <strong>
+                                                    Thứ 3 <br>
+                                                    01/02/2023
+                                                </strong>
+                                            </td>
+                                            <td style="text-align:center">
+                                                07:00
+                                            </td>
+                                            <td style="line-height: 25px; font-weight:400;text-align: justify;">
+                                                <i class="fa-regular fa-calendar"></i>
+                                                Họp bàn tham gia Ngày hội khởi nghiệp Quốc gia HSSV lần thứ V,
+                                                 năm 2023 – SV.STARTUP-2023
+                                            </td>
+                                            <td style="line-height: 25px; font-weight:400;text-align: justify;">
+                                                Hiệu trưởng, PHT- TS. Phan Tuấn Anh, đại diện lãnh đạo Phòng ĐTĐH&CTSV,
+                                                 KHCN&HTQT, Trưởng khoa CNTT, Kiến trúc, Hóa học, Sinh học, Đ,ĐT&CNVL,
+                                                 các cá nhân có ý tưởng, sản phẩm khởi nghiệp giới thiệu tham gia.
+                                            </td>
+                                            <td style="text-align:center">
+                                                Phòng họp A2.06
+                                            </td>
+                                            <td style="text-align:center">
+                                                Hiệu trưởng
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-align:center">
+                                                07:00
+                                            </td>
+                                            <td style="line-height: 25px; font-weight:400;text-align: justify;">
+                                                <i class="fa-regular fa-calendar"></i>
+                                                Họp bàn tham gia Ngày hội khởi nghiệp Quốc gia HSSV lần thứ V,
+                                                năm 2023 – SV.STARTUP-2023
+                                                <div class="attached__files-wrap">
+                                                    <div class="attached__files">
+                                                        <a href="">File đính kèm <i class="fa-solid fa-file"></i></a>
+                                                    </div>
+                                                    <div class="attached__files">
+                                                        <a href="">File đính kèm <i class="fa-solid fa-file"></i></a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td style="line-height: 25px; font-weight:400;text-align: justify;">
+                                                Hiệu trưởng, PHT- TS. Phan Tuấn Anh, đại diện lãnh đạo Phòng ĐTĐH&CTSV,
+                                                 KHCN&HTQT, Trưởng khoa CNTT, Kiến trúc, Hóa học, Sinh học, Đ,ĐT&CNVL,
+                                                 các cá nhân có ý tưởng, sản phẩm khởi nghiệp giới thiệu tham gia.
+                                            </td>
+                                            <td style="text-align:center">
+                                                Phòng họp A2.06
+                                            </td>
+                                            <td style="text-align:center">
+                                                Hiệu trưởng
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <section class="contact">
+        <div class="wrapper">
+          <div class="container contact-inner">
+            <div class="contact-btn">
+              <div class="contact-btn-border"></div>
+              <a class="btn btn-size-m btn-boder btn-primary">
+                thông tin tuyển sinh
+                <i class="fa-sharp fa-solid fa-angle-right"></i>
+              </a>
+              <div class="contact-btn-border contact-btn-border-right"></div>
+            </div>
+            <ul class="contact__list">
+              <li class="contact__item">
+                <img src="./assets/images/Untitled.png" alt=""  />
+              </li>
+              <li class="contact__item">
+                <h4 class="contact__item-heading">Liên hệ với chúng tôi</h4>
+                <div class="contact__new">
+                  <p>
+                    <i class="fa-solid fa-location-dot"></i> 77 Nguyễn Huệ, Thành Phố Huế
+                  </p>
+                  <p><i class="fa-solid fa-phone"></i> (84) (54) 3826767</p>
+                  <a href="https://www.facebook.com/ithusc">
+                    <img src="assets/images/facebook.png" alt="">
+                  </a>
+                </div>
+              </li>
+              <li class="contact__item">
+                <h4 class="contact__item-heading">Liên kết hữu ích</h4>
+                <ul class="contact__list-link">
+                  <li class="contact__item-link">
+                    <a href="#"
+                      ><i class="fa-sharp fa-solid fa-angle-right"></i>
+                      <span>Đào tạo</span></a
+                    >
+                  </li>
+                  <li class="contact__item-link">
+                    <a href="#"
+                      ><i class="fa-sharp fa-solid fa-angle-right"></i>
+                      <span>Nghiên cứu khoa học</span></a
+                    >
+                  </li>
+                  <li class="contact__item-link">
+                    <a href="#"
+                      ><i class="fa-sharp fa-solid fa-angle-right"></i>
+                      <span>Hợp tác quốc tế</span></a
+                    >
+                  </li>
+                  <li class="contact__item-link">
+                    <a href="#"
+                      ><i class="fa-sharp fa-solid fa-angle-right"></i>
+                      <span>Sinh viên</span></a
+                    >
+                  </li>
+                  <li class="contact__item-link">
+                    <a href="#"
+                      ><i class="fa-sharp fa-solid fa-angle-right"></i>
+                      <span>Tuyển sinh</span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="contact__item">
+                <h4 class="contact__item-heading">Kết nối với chúng tôi</h4>
+                <ul class="contact__list-conntect">
+                  <li class="contact__item-connect">
+                    <a class="connect" href="https://hueuni.edu.vn/">
+                      <img
+                        src="./assets/images/dhh.png"
+                        alt=""
+                        class="connect__img"
+                      />
+                      <div class="connect__content">
+                        <h4 class="connect__content-heading">Đại Học Huế</h4>
+                        <p class="connect__content-desc">Hue University</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="contact__item-connect">
+                    <a class="connect" href="https://husc.edu.vn/">
+                      <img
+                        src="./assets/images/husc_logo.png"
+                        alt=""
+                        class="connect__img"
+                      />
+                      <div class="connect__content">
+                        <h4 class="connect__content-heading">
+                          Đại học Khoa học Huế
+                        </h4>
+                        <p class="connect__content-desc">
+                          Hue University of Sciences
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="contact__item-connect">
+                    <a class="connect" href="#">
+                      <img
+                        src="./assets/images/KhoaMoiTruong.png"
+                        alt=""
+                        class="connect__img"
+                      />
+                      <div class="connect__content">
+                        <h4 class="connect__content-heading">Khoa Môi trường</h4>
+                        <p class="connect__content-desc">
+                          Faculty of Environmental Science
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="contact__item-connect">
+                    <a class="connect" href="#">
+                      <img
+                        src="./assets/images/hoclieu.png"
+                        alt=""
+                        class="connect__img"
+                      />
+                      <div class="connect__content">
+                        <h4 class="connect__content-heading">
+                          Trung tâm học liệu
+                        </h4>
+                        <p class="connect__content-desc">
+                          Learning Resource Center
+                        </p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="wrapper">
+          <div class="container footer-inner">
+            <div class="footer__copy">
+              <p>
+                Copyright © 2012. Khoa Công nghệ Thông tin - Trường Đại học Khoa
+                học Huế.
+              </p>
+              <p>Địa chỉ: 77 Nguyễn Huệ, Huế, Việt Nam.</p>
+              <p>Lượt truy cập: 28,580,684 - Online: 004</p>
+            </div>
+          </div>
+        </div>
+        <a id="go-to-top" href="#goback"><i class="fas fa-angle-up"></i></a>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            jQuery('#from-date,#to-date').datetimepicker(
+                {
+                closeOnDateSelect:true,
+                dayOfWeekStart: 1,
+                format:'d-m-Y',
+                timepicker:false,
+                }
+            );
+        });
+    </script>
+</body>
+</html>
