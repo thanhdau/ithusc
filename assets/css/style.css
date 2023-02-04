@@ -262,7 +262,7 @@
 }
 
 /* content*/
-.content__heading, .info__news-content--header, .organization__content,.even__calendar__content{
+.content__heading, .info__news-content--header, .organization__content,.even__calendar__content,.lecturers_details__content{
   padding-top: 7rem;
     width: 100%;
     text-align: center;
@@ -1177,7 +1177,66 @@ td, th {
 .next-week{
   padding-bottom: 30px;
 }
-
+/*lecturers details*/
+.lecturers_details-img{
+  text-align: center;
+}
+.lecturers_details{
+  padding-top: 95px;
+  padding-bottom: 40px;
+}
+.direc_content_detail > .name{
+  color: var(--primary-color);
+  padding: 1.5rem 0;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  font-weight:bold
+}
+.lecturers_details--infomation,.lecturers_details--specialize{
+  display: flex;
+  font-size:20px;
+  padding: 15px 0;
+}
+.lecturers_details--infomation > i {
+  font-size:25px;
+  margin-top: 2px;
+}
+.lecturers_details--infomation > p {
+  padding-left: 20px;
+  line-height: 25px;
+  color: #666;
+}
+.lecturers_details--infomation > p > span{
+  font-weight: 600;
+  color: var(--black-color);
+}
+.lecturers_details--train_list{
+  padding: 0 20px;
+}
+.lecturers_details--train_list > h5{
+  font-weight: 600;
+  color: var(--black-color);
+}
+.lecturers_details--train_list > ul{
+  list-style-type: disc;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+.lecturers_details--train_list > ul > li {
+  color: #666;
+  padding: 5px 0;
+  text-align: justify;
+  line-height: 25px;
+}
+.custom-pd{
+  padding-left: 15px;
+}
+.lecturers_details__article{
+  padding: 40px 0 40px 0;
+}
+.lecturers_details__info-right{
+  padding-left: 30px !important;
+}
 /*Back to top*/
 #go-to-top {
   /* display: none; */
