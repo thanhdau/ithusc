@@ -1137,12 +1137,15 @@ td, th {
   align-items: center;
 }
 .right__select__calendar{
-  padding-left: 20px;
-  padding-right: 10px;
+  padding-left: 8px;
+  padding-right: 17px;
 }
 .even__calendar--top{
-  font-size: 15px;
-  padding-bottom: 20px;
+  font-size: 17px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
 }
 .btn-vul{
   background-color: var(--primary-color);
@@ -1177,6 +1180,9 @@ td, th {
 .next-week{
   padding-bottom: 30px;
 }
+.even__calendar__manipul >span{
+  padding-right: 10px;
+}
 /*lecturers details*/
 .lecturers_details-img{
   text-align: center;
@@ -1187,7 +1193,7 @@ td, th {
 }
 .direc_content_detail > .name{
   color: var(--primary-color);
-  padding: 1.5rem 0;
+  padding-top: 3rem;
   font-size: 1.6em;
   text-transform: uppercase;
   font-weight:bold
@@ -1235,7 +1241,20 @@ td, th {
   padding: 40px 0 40px 0;
 }
 .lecturers_details__info-right{
-  padding-left: 30px !important;
+  padding-left: 60px !important;
+}
+.left__select__calendar > input[type="text"]{
+  font-size:17px;
+  width: 125px;
+  text-align: center;
+}
+.right__select__calendar > input[type="text"]{
+  font-size:17px;
+  width: 125px;
+  text-align: center;
+}
+.lecturers_details > .wrapper > .container{
+  padding: 0 5rem;
 }
 /*Back to top*/
 #go-to-top {
