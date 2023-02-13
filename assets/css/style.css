@@ -690,7 +690,7 @@
 .contact__new p {
   color: var(--white-color);;
   font-size: 1.4rem;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 .contact__new img{
   width: 30px;
@@ -709,10 +709,9 @@
 .contact__item-connect {
   margin-bottom: 2rem;
   padding: 4px;
-  border: 1px solid var(--text-color);
 }
-.contact__item-connect:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+.connect__content:hover .connect__content-heading {
+  color: red;
 }
 .connect {
   display: flex;
@@ -721,7 +720,6 @@
 }
 .connect__img {
   width: 4rem;
-  height: 4rem;
   margin-right: 4px;
 }
 .connect__content {
