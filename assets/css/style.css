@@ -273,7 +273,7 @@
     font-weight: bold;
 }
 .content__text-wrap .content__write {
-  font-size: 20px;
+  font-size: 17px;
   line-height: 27px;
 }
 .content__list{
@@ -292,7 +292,7 @@
   padding-bottom: 20px;
 }
 .content__list-i{
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 500;
   line-height: 26px;
   letter-spacing: 0;
@@ -308,7 +308,7 @@
   text-align: center;
 }
 .content__footer-link{
-  font-size:20px;
+  font-size:17px;
   font-weight: 400;
   line-height: 20px;
   height: 80px;
@@ -511,7 +511,7 @@
   color: var(--text-color);
 }
 .notify__item-link h4 {
-  font-size: 1.8rem;
+  font-size: 17px;
   color: var(--black-text-color);
   line-height: 2.5rem;
   font-weight: 400;
@@ -567,11 +567,12 @@
   font-size:20px;
   line-height: 1.3;
   color: var(--black-color);
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  -webkit-line-clamp:2;
+  height: 75px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
 .item_time{
   color: var(--gray-input-color);
@@ -582,8 +583,8 @@
   height:30px;
 }
 /* intro*/
-.intro{
-  background: var(--shadow-color);
+.intro {
+    /*background: var(--shadow-color);*/
 }
 .intro-wrap{
   display: flex;
@@ -592,10 +593,12 @@
 
 .intro .intro--left{
   padding: 155px 0 0 0;
+    max-width: 900px;
 }
 
 .intro .intro--left__content {
   padding: 0 0 30px 30px;
+    width: 900px;
 }
 
 .intro .intro--left__content h2, .intro--right__info-title{
@@ -605,8 +608,8 @@
   color: var(--primary-color);
 }
 
-.intro .intro--left__content span, .intro--right__info{
-  font-size: 20px;
+    .intro .intro--left__content span, .intro--right__info {
+        font-size: 18px;
   line-height: 21px;
   color: var(--black-text-color);
 
@@ -653,8 +656,9 @@
 .intro--right__info-desc{
   line-height: 28px;
 }
-.intro--right__btn{
-  width: 190px;
+
+.intro--right__btn {
+    width: 197px;
   margin-top: 20px;
   display: flex;
 }
@@ -939,19 +943,19 @@
 .organ__title,.organ__title-long{
   padding-bottom: 10px;
 }
-.organ__title h2{
-  font-size: 2rem;
-  font-weight: 600;
-  border: 1px solid var(--primary-color);
-  background-color: var(--primary-color);
-  color: var(--white-color);
-  padding: 10px;
-  min-width: 165px;
-  width: 165px;
-  text-align: center;
-  align-items: center;
-  border-radius: 15px 0 15px 0;
-}
+    .organ__title h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        border: 1px solid var(--primary-color);
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        padding: 10px;
+        min-width: 165px;
+        max-width: 200px;
+        text-align: center;
+        align-items: center;
+        border-radius: 15px 0 15px 0;
+    }
 .organ__title-long h2{
   font-size: 2rem;
   font-weight: 600;
@@ -994,17 +998,17 @@
 .direc_content > .name{
   color: var(--black-color);
   font-weight: bold;
+  padding-top: 0.5rem;
 }
 .direc_content > .position{
   color: var(--primary-color);
-  padding: 1rem 0;
   font-size: 1.3em;
   text-transform: uppercase;
   font-weight:bold
 }
 .direc_pic img{
-  /* width: 208px; */
-  /* height: 308px; */
+  width: 221px; 
+   height: 308px;
 }
 /*----------------------------------------------------------------*/
 /*teaching_staff*/
@@ -1014,8 +1018,8 @@
 }
 /*----------------------------------------------------------------*/
 /*university_train*/
-.train_detail{
-  background: url(../images/backgr-1.jpg) no-repeat center ;
+.train_detail {
+    background: url(../images/daotao.jpg) no-repeat center;
   background-size: cover;
   width: 100%;
   height: 415px;
@@ -1042,32 +1046,37 @@
   padding: 14rem 2rem;
 }
 .train_detail-title h1{
-  font-size: 30px;
+  font-size: 40px;
   z-index: 1;
   font-weight:600;
 }
-.train_detail-title h1::after{
-  content: "";
-  width: 100px;
-  height: 2px;
-  margin-top: 10px;
-  background: var(--white-color);
-  position: absolute;
-  bottom: 125px;
-  left: 20px;
+.train__title {
+    font-size: 35px;
+    line-height: 1;
+    align-items: center;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-family: 'Khula', sans-serif;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
-.train__title{
-  font-size:35px;
-  line-height: 1;
-  align-items: center;
-  color: var(--primary-color);
-  font-weight: 700;
-  font-family: 'Khula', sans-serif;
-  margin-left: 25px;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  width:100%;
+.train__small-title {
+    padding: 10px 0;
+    font-size: 25px;
+    line-height: 1;
+    align-items: center;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-family: 'Khula', sans-serif;
+    margin-left: 25px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 .overview,.demand,.prospect,.curriculum{
   padding: 40px 0;
@@ -1104,9 +1113,9 @@
   font-size: 12px;
   border-radius: 50%;
 }
-.curri__table{
-  font-size:16px;
-  padding: 20px 0;
+.curri__table {
+    font-size: 16px;
+    padding: 30px 100px 0;
 }
 table {
   border-collapse: collapse;
@@ -1158,7 +1167,7 @@ td, th {
   font-size: 20px;
   color: var(--primary-color);
   font-weight: 600;
-  padding: 40px 0 20px 0;
+  padding: 20px 0 20px 0;
 }
 .col-headings__even__calendar > td{
   text-align: center;
@@ -1198,7 +1207,7 @@ td, th {
 }
 .lecturers_details--infomation,.lecturers_details--specialize{
   display: flex;
-  font-size:20px;
+  font-size:17px;
   padding: 15px 0;
 }
 .lecturers_details--infomation > i {
@@ -1214,8 +1223,9 @@ td, th {
   font-weight: 600;
   color: var(--black-color);
 }
-.lecturers_details--train_list{
-  padding: 0 20px;
+.lecturers_details--train_list {
+    padding: 0 20px;
+    line-height: 30px;
 }
 .lecturers_details--train_list > h5{
   font-weight: 600;
@@ -1227,13 +1237,25 @@ td, th {
   padding-top: 5px;
 }
 .lecturers_details--train_list > ul > li {
-  color: #666;
-  padding: 5px 0;
+  color: #000;
   text-align: justify;
   line-height: 25px;
 }
-.custom-pd{
-  padding-left: 15px;
+.lecturers_details--train_list h1, h2, h3, h4, h5 {
+    color: var(--primary-color);
+    padding: 5px 0;
+}
+.lecturers_details--train_list.large > ul > li {
+    padding: 5px 0;
+}
+.lecturers_details--train_list.large h1, h2, h3, h4, h5 {
+    padding: 5px 0;
+}
+.lecturers_details--train_list.large > ol {
+    list-style: auto;
+}
+.custom-pd {
+    padding-left: 15px;
 }
 .lecturers_details__article{
   padding: 40px 0 40px 0;
@@ -1253,6 +1275,10 @@ td, th {
 }
 .lecturers_details > .wrapper > .container{
   padding: 0 5rem;
+}
+.lecturers_pic{
+  position: relative;
+  overflow: hidden;
 }
 /*Back to top*/
 #go-to-top {
@@ -1279,3 +1305,49 @@ td, th {
   font-size: 15px;
 }
 
+.px-5 {
+    padding: 0 5rem;
+}
+
+.train__image {
+    margin-top: 20px;
+}
+
+    .train__image img {
+        width: 700px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .train__image p {
+        text-align: center;
+        font-size: 16px;
+        line-height: 160%;
+        font-style: italic;
+        padding-top: 10px;
+    }
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.line-height-25 {
+    line-height: 25px;
+}
+
+.even__calendar-table td {
+    padding: 7px 13px;
+}
+
+.content-raw > ol{
+    list-style: auto;
+}
+
+.content-raw > ul {
+    list-style: auto;
+}

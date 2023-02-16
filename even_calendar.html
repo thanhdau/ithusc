@@ -800,7 +800,16 @@
         <a id="go-to-top" href="#goback"><i class="fas fa-angle-up"></i></a>
       </footer>
       <!-- js -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          jQuery("#from-date,#to-date").datetimepicker({
+            closeOnDateSelect: true,
+            dayOfWeekStart: 1,
+            format: "d-m-Y",
+            timepicker: false,
+          });
+        });
+      </script>
       <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script src="./assets/js/app.js"></script>
