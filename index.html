@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/slideslick.css" />
     <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
@@ -41,7 +42,8 @@
           <a href="" class="logo">
             <img src="./assets/images/Untitled.png" alt="" class="logo__img" />
           </a>
-          <nav class="navbar">
+          <!-- Nav PC  -->
+          <nav class="navbar hide-on-mobile-tablet">
             <ul class="navbar__list">
               <li class="navbar__item">
                 <a href="index.html" class="navbar__item-link active"
@@ -336,6 +338,110 @@
             </ul>
           </nav>
         </div>
+        <!-- Nav mobile - tablet  -->
+        <nav class="navbar-swap">
+          <div class="navbar-btn display-on-mobile-tablet">
+            <label for="navbar-btn--input" class="navbar-btn--open">
+              <i class="fas fa-bars"></i>
+            </label>
+            <label for="navbar-btn--input" class="navbar-btn--close">
+              <i class="fas fa-times"></i>
+            </label>
+            <input type="checkbox" name="btn" id="navbar-btn--input" class="navbar-input" hidden>
+            <label for="navbar-btn--input" class="navbar__overlay"></label>
+            <nav class="navbar-mobile-tablet">
+              <ul class="navbar-list">
+                <li>
+                  <a href=""><span class="nav-big__title active">TRANG CHỦ</span></a>
+                </li>
+                <li>
+                  <span class="nav-big__title">Giới thiệu</span>
+                  <ul class="navbar-list-r2">
+                    <li>
+                      <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                      <span><a href=""> Tổng quan</a></span>
+                    </li>
+                    <li>
+                      <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                      <span><a href="">Đội ngũ giảng viên</a> </span>
+                    </li>
+                    <li>
+                      <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                      <span><a href="">Cơ cấu tổ chức</a></span>
+                    </li>
+                    <li class="nav-lv-3">
+                      <p>
+                        <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                        <span>Các bộ môn</span>
+                      </p>
+                      <ul class="navbar-list-r3">
+                        <li>
+                          <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                          <span><a href="">Khoa học máy tính</a></span>
+                        </li>
+                        <li>
+                          <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                          <span><a href="">Công nghệ phần mềm</a></span>
+                        </li>
+                        <li>
+                          <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                          <span><a href="">Mạng máy tính</a></span>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="nav-big__title">Đào tạo</span>
+                  <ul class="navbar-list-r2">
+                    <li>
+                      <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                      <span><a href="">Đào tạo đại học</a></span>
+                    </li>
+                    <li>
+                      <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                      <span><a href="">Đào tạo sau đại học</a> </span>
+                    </li>
+                    <li>
+                      <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                      <span><a href="">Cơ cấu tổ chức</a></span>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href=""><span class="nav-big__title">Nghiên cứu khoa học</span></a>
+                </li>
+                <li>
+                  <a href=""><span class="nav-big__title">Đoàn, hội</span></a>
+                </li>
+                <li>
+                  <span class="nav-big__title">Tin tức, thông báo</span>
+                  <ul class="navbar-list-r2">
+                    <li>
+                      <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                      <span><a href="">Tin tức</a></span>
+                    </li>
+                    <li>
+                      <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                      <span><a href="">Thông báo</a> </span>
+                    </li>
+                    <li>
+                      <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                      <span><a href="">Học bổng</a></span>
+                    </li>
+                    <li>
+                      <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                      <span><a href="">Việc làm</a></span>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href=""><span class="nav-big__title">Kế hoạch công tác</span></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </nav>
       </div>
     </header>
     <!-- Slide Show -->
@@ -345,39 +451,9 @@
       </div>
       <div class="slide">
         <img src="./assets/images/test1.jpg" alt="" class="slide__img" />
-        <div class="slide__content">
-          <h3 class="slide__content-heading">Kì thi ACM</h3>
-          <p class="slide__content-desc text-clamp text-clamp-2">
-            Sinh viên HUSC Đạt huy chường Đồng ICPC
-          </p>
-          <a href="#" class="btn btn-br btn-size-m btn-slide"
-            >Chi tiết <i class="fa-sharp fa-solid fa-angle-right"></i
-          ></a>
-        </div>
-      </div>
-      <div class="slide">
-        <img src="./assets/images/test2.jpg" alt="" class="slide__img" />
-        <div class="slide__content">
-          <h3 class="slide__content-heading">Đại hội Đoàn toàn quốc</h3>
-          <p class="slide__content-desc text-clamp text-clamp-2">
-            Tuổi trẻ HUSC chào mừng thành công của Đại hội Đoàn toàn quốc
-          </p>
-          <a href="#" class="btn btn-br btn-size-m btn-slide"
-            >Chi tiết <i class="fa-sharp fa-solid fa-angle-right"></i
-          ></a>
-        </div>
       </div>
       <div class="slide">
         <img src="./assets/images/test3.jpg" alt="" class="slide__img" />
-        <div class="slide__content">
-          <h3 class="slide__content-heading">Sinh viên vượt lên hoàn cảnh</h3>
-          <p class="slide__content-desc">
-            Vượt lên số phận - Làm đẹp cho đời
-          </p>
-          <a href="#" class="btn btn-br btn-size-m btn-slide"
-            >Chi tiết <i class="fa-sharp fa-solid fa-angle-right"></i
-          ></a>
-        </div>
       </div>
       <a onclick="plusSlides(-1)" class="slide-show-prev">
         <i class="fa-sharp fa-solid fa-angle-left"></i>
@@ -390,41 +466,41 @@
     <section class="flat">
       <div class="wrapper flat-inner">
         <div class="container">
-          <div class="flat__list">
-            <a href="#" class="flat__item">
-              <h3 class="flat__item-heading">đào tạo</h3>
+          <div class="flat__list row ">
+            <div class="flat__item col l-4 m-12 s-12">
+              <h3 class="flat__item-heading">giới thiệu</h3>
               <div class="flat__item-line"></div>
               <p class="flat__item-desc">
-                Khoa Công nghệ thông tin là nơi đào tạo các cử nhân CNTT có kiến thức nền tảng mạnh và chuyên sâu, có năng lực
-                ứng dụng thành quả mới nhất của CNTT và có phương pháp luận vững chắc.
+                  Khoa Công nghệ thông tin, trường Đại học Khoa học Huế được thành lập ngày 01/06/1995,
+                  là một trong những nơi đào tạo ngành công nghệ thông tin đầu tiên trên cả nước.
               </p>
               <i
                 class="flat__item-icon fa-sharp fa-solid fa-graduation-cap"
               ></i>
-            </a>
-            <a href="#" class="flat__item">
-              <h3 class="flat__item-heading">nghiên cứu khoa học</h3>
+            </div>
+            <div class="flat__item col l-4 m-12 s-12">
+              <h3 class="flat__item-heading">mục tiêu</h3>
               <div class="flat__item-line"></div>
               <p class="flat__item-desc">
-                Khoa Công nghệ thông tin là nơi ươm mầm các sản phẩm sáng tạo, thúc đẩy sinh viên nghiên cứu
-                khoa học thông qua các cuộc thi như hackathon, HUE - ICTC, ...
+                  Đào tạo các cử nhân CNTT có kiến thức nền tảng mạnh và chuyên sâu, có năng lực ứng dụng thành quả mới nhất của CNTT
+                  hướng tới nền kinh tế tri thức và có phương pháp luận vững chắc.
               </p>
               <i class="fa-solid fa-atom-simple"></i>
               <i
                 class="flat__item-icon fa-sharp fa-solid fa-atom"
               ></i>
-            </a>
-            <a href="#" class="flat__item">
-              <h3 class="flat__item-heading">Cơ sở vật chất</h3>
+            </div>
+            <div class="flat__item col l-4 m-12 s-12">
+              <h3 class="flat__item-heading">sứ mạng</h3>
               <div class="flat__item-line"></div>
               <p class="flat__item-desc">
-                Khoa Công nghệ thông tin hiện nay được trang bị 10 phòng lab máy tính, 01 phòng thực hành doanh nghiệp
-                , hệ thống mạng ổn định đảm bảo cho các bạn sử dụng và có cơ hội tiếp cận doanh nghiệp
+                  Đào tạo nguồn nhân lực chất lượng cao, đóng góp tích cực cho sự phát triển của khoa học và công nghệ và
+                  đáp ứng yêu cầu phát triển đất nước.
               </p>
               <i
                 class="flat__item-icon fa-sharp fa-solid fa-computer"
               ></i>
-            </a>
+            </div>
           </div>
         </div>
       </div>
@@ -516,131 +592,129 @@
     <section class="news" data-aos="zoom-in-up">
       <div class="wrapper">
         <div class="container news-inner">
-          <div class="new">
-            <div class="news__header">
-              <h2 class="news__header-heading">Tin tức & Sự kiện</h2>
-              <a class="btn btn-border btn-size-s news__header-btn"
-                >Xem thêm <i class="fa-sharp fa-solid fa-angle-right"></i
-              ></a>
-            </div>
-
-            <div class="new-focus">
-              <a href="#" class="new-focus-link">
-                <img
-                  src="./assets/images/new-focus.png"
-                  alt=""
-                  class="new-focus-img"
-              /></a>
-              <div class="new-focus-content">
-                <a href="#" class="new-focus-heading">
-                  Thăm dò ý kiến rộng rãi dự thảo Chuẩn đầu ra Chương trình đào
-                  tạo đổi mới ngành cử nhân Điều dưỡng
-                </a>
-                <p class="new-focus-desc text-clamp text-clamp-3">
-                  Thực hiện quy trình về xây dựng chương trình đổi mới ngành cử
-                  nhân Điều dưỡng trình độ đại học theo Quyết định số
-                  5620/QĐ-ĐHYD ngày 16 tháng 3 năm 2022 của Hiệu trưởng Trường
-                  Đại học Y- Dược, Đại học Huế.
-                </p>
+          <div class="row">
+            <div class="new col l-6 m-6 s-12">
+              <div class="news__header">
+                <h2 class="news__header-heading">Tin tức & Sự kiện</h2>
+                <a class="btn btn-border btn-size-s news__header-btn"
+                  >Xem thêm <i class="fa-sharp fa-solid fa-angle-right"></i
+                ></a>
+              </div>
+  
+              <div class="new-focus">
+                <a href="#" class="new-focus-link">
+                  <img
+                    src="./assets/images/new-focus.png"
+                    alt=""
+                    class="new-focus-img"
+                /></a>
+                <div class="new-focus-content">
+                  <a href="#" class="new-focus-heading">
+                    Thăm dò ý kiến rộng rãi dự thảo Chuẩn đầu ra Chương trình đào
+                    tạo đổi mới ngành cử nhân Điều dưỡng
+                  </a>
+                  <p class="new-focus-desc text-clamp text-clamp-3">
+                    Thực hiện quy trình về xây dựng chương trình đổi mới ngành cử
+                    nhân Điều dưỡng trình độ đại học theo Quyết định số
+                    5620/QĐ-ĐHYD ngày 16 tháng 3 năm 2022 của Hiệu trưởng Trường
+                    Đại học Y- Dược, Đại học Huế.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="notify">
-            <div class="news__header">
-              <h2 class="news__header-heading">Thông báo mới</h2>
-              <a class="btn btn-border btn-size-s news__header-btn"
-                >Xem tất cả <i class="fa-sharp fa-solid fa-angle-right"></i
-              ></a>
-            </div>
-            <ul class="notify__list">
-              <div class="date-time">
-                <i class="fa-sharp fa-solid fa-calendar-days"></i>
-                <span>23/12/2022</span>
+            <div class="notify col l-6 m-6 s-12">
+              <div class="news__header" style="padding-left: 22px;">
+                <h2 class="news__header-heading">Thông báo mới</h2>
+                <a class="btn btn-border btn-size-s news__header-btn"
+                  >Xem tất cả <i class="fa-sharp fa-solid fa-angle-right"></i
+                ></a>
               </div>
-              <li class="notify__item">
-                <div class="cricle">
-                  <i class="fa-solid fa-circle"></i>
-                </div>
-                <a href="#" class="notify__item-link">
-                  <div class="notify__item-link-wrap">
-                    <h4>
-                      alo
-                    </h4>
-                    <span>Phòng Đào tạo Sau đại học</span>
+              <ul class="notify__list">
+                <li class="notify__item">
+                  <div class="cricle">
+                    <i class="fa-solid fa-circle"></i>
                   </div>
-                </a>
-              </li>
-              <li class="notify__item">
-                <div class="cricle">
-                  <i class="fa-solid fa-circle"></i>
-                </div>
-                <a href="#" class="notify__item-link">
-                  <div class="notify__item-link-wrap">
-                    <h4>
-                      Công nhận điểm chuẩn trúng tuyển trong kỳ tuyển sinh cao học
-                      đợt 2 năm 2022 của Đại học Huế
-                    </h4>
-                    <span>Phòng Đào tạo Sau đại học</span>
+                  <a href="#" class="notify__item-link">
+                    <div class="notify__item-link-wrap">
+                      <h4>
+                        alo
+                      </h4>
+                      <span>Phòng Đào tạo Sau đại học</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="notify__item">
+                  <div class="cricle">
+                    <i class="fa-solid fa-circle"></i>
                   </div>
-                </a>
-              </li>
-              <li class="notify__item">
-                <div class="cricle">
-                  <i class="fa-solid fa-circle"></i>
-                </div>
-                <a href="#" class="notify__item-link">
-                  <div class="notify__item-link-wrap">
-                    <h4>
-                      Công nhận điểm chuẩn trúng tuyển trong kỳ tuyển sinh cao học
-                      đợt 2 năm 2022 của Đại học Huế
-                    </h4>
-                    <span>Phòng Đào tạo Sau đại học</span>
+                  <a href="#" class="notify__item-link">
+                    <div class="notify__item-link-wrap">
+                      <h4>
+                        Công nhận điểm chuẩn trúng tuyển trong kỳ tuyển sinh cao học
+                        đợt 2 năm 2022 của Đại học Huế
+                      </h4>
+                      <span>Phòng Đào tạo Sau đại học</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="notify__item">
+                  <div class="cricle">
+                    <i class="fa-solid fa-circle"></i>
                   </div>
-                </a>
-              </li>
-              <li class="notify__item">
-                <div class="cricle">
-                  <i class="fa-solid fa-circle"></i>
-                </div>
-                <a href="#" class="notify__item-link">
-                  <div class="notify__item-link-wrap">
-                    <h4>
-                      Công nhận điểm chuẩn trúng tuyển trong kỳ tuyển sinh cao học
-                      đợt 2 năm 2022 của Đại học Huế
-                    </h4>
-                    <span>Phòng Đào tạo Sau đại học</span>
+                  <a href="#" class="notify__item-link">
+                    <div class="notify__item-link-wrap">
+                      <h4>
+                        Công nhận điểm chuẩn trúng tuyển trong kỳ tuyển sinh cao học
+                        đợt 2 năm 2022 của Đại học Huế
+                      </h4>
+                      <span>Phòng Đào tạo Sau đại học</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="notify__item">
+                  <div class="cricle">
+                    <i class="fa-solid fa-circle"></i>
                   </div>
-                </a>
-              </li>
-              <li class="notify__item">
-                <div class="cricle">
-                  <i class="fa-solid fa-circle"></i>
-                </div>
-                <a href="#" class="notify__item-link">
-                  <div class="notify__item-link-wrap">
-                    <h4>
-                      Công nhận điểm chuẩn trúng tuyển trong kỳ tuyển sinh cao học
-                      đợt 2 năm 2022 của Đại học Huế
-                    </h4>
-                    <span>Phòng Đào tạo Sau đại học</span>
+                  <a href="#" class="notify__item-link">
+                    <div class="notify__item-link-wrap">
+                      <h4>
+                        Công nhận điểm chuẩn trúng tuyển trong kỳ tuyển sinh cao học
+                        đợt 2 năm 2022 của Đại học Huế
+                      </h4>
+                      <span>Phòng Đào tạo Sau đại học</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="notify__item">
+                  <div class="cricle">
+                    <i class="fa-solid fa-circle"></i>
                   </div>
-                </a>
-              </li>
-              <li class="notify__item">
-                <div class="cricle">
-                  <i class="fa-solid fa-circle"></i>
-                </div>
-                <a href="#" class="notify__item-link">
-                  <div class="notify__item-link-wrap">
-                    <h4>
-                      Công nhận điểm chuẩn trúng tuyển trong kỳ tuyển sinh cao học
-                      đợt 2 năm 2022 của Đại học Huế
-                    </h4>
-                    <span>Phòng Đào tạo Sau đại học</span>
+                  <a href="#" class="notify__item-link">
+                    <div class="notify__item-link-wrap">
+                      <h4>
+                        Công nhận điểm chuẩn trúng tuyển trong kỳ tuyển sinh cao học
+                        đợt 2 năm 2022 của Đại học Huế
+                      </h4>
+                      <span>Phòng Đào tạo Sau đại học</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="notify__item">
+                  <div class="cricle">
+                    <i class="fa-solid fa-circle"></i>
                   </div>
-                </a>
-              </li>
-            </ul>
+                  <a href="#" class="notify__item-link">
+                    <div class="notify__item-link-wrap">
+                      <h4>
+                        Công nhận điểm chuẩn trúng tuyển trong kỳ tuyển sinh cao học
+                        đợt 2 năm 2022 của Đại học Huế
+                      </h4>
+                      <span>Phòng Đào tạo Sau đại học</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -651,12 +725,12 @@
         <div class="container">
           <div class="hot__new-content">
             <div class="hot__new-content--top row">
-              <div class="hot__new-content--top-left col l-6">
+              <div class="hot__new-content--top-left col l-6 m-6 s-6">
                 <h2>
                   Tin tức nổi bật
                 </h2>
               </div>
-              <div class="hot__new-content--top-right l-6">
+              <div class="hot__new-content--top-right col l-2-opt m-3 s-6-opt">
                 <a href="#" class="hot__new-btn btn--lun ">Xem thêm</a>
               </div>
             </div>
@@ -806,7 +880,7 @@
               </a>
             </div>
           </div>
-          <div class="activity__btn">
+          <div class="activity__btn row">
             <a href="" class="btn btn-size-m btn-primary"
               >Chuyển trang đào tạo
               <i class="fa-sharp fa-solid fa-angle-right"></i
@@ -830,11 +904,11 @@
             </a>
             <div class="contact-btn-border contact-btn-border-right"></div>
           </div>
-          <ul class="contact__list">
-            <li class="contact__item">
+          <ul class="contact__list row">
+            <li class="contact__item col l-3 m-6 s-12">
               <img src="./assets/images/Logo-footer.png" alt=""  />
             </li>
-            <li class="contact__item">
+            <li class="contact__item col l-3 m-6 s-12">
               <h4 class="contact__item-heading">Liên hệ với chúng tôi</h4>
               <div class="contact__new">
                 <p>
@@ -853,7 +927,7 @@
                 </div>
               </div>
             </li>
-            <li class="contact__item">
+            <li class="contact__item col l-2 m-6 s-12">
               <h4 class="contact__item-heading">Liên kết hữu ích</h4>
               <ul class="contact__list-link">
                 <li class="contact__item-link">
@@ -888,7 +962,7 @@
                 </li>
               </ul>
             </li>
-            <li class="contact__item">
+            <li class="contact__item col l-3 m-6 s-12">
               <h4 class="contact__item-heading">Kết nối với chúng tôi</h4>
               <ul class="contact__list-conntect">
                 <li class="contact__item-connect">
@@ -933,7 +1007,7 @@
         <div class="container footer-inner">
           <div class="footer__copy">
             <p>
-              Copyright © 2012. Khoa Công nghệ Thông tin - Trường Đại học Khoa
+              Copyright © 2022. Khoa Công nghệ Thông tin - Trường Đại học Khoa
               học Huế.
             </p>
             <p>Địa chỉ: 77 Nguyễn Huệ, Huế, Việt Nam.</p>

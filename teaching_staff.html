@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/slideslick.css" />
     <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
@@ -34,307 +35,412 @@
 <body>
     <!-- header -->
     <header class="header">
-        <div class="wrapper">
-            <div class="container header--inner">
-                <a href="" class="logo">
-                <img src="./assets/images/Untitled.png" alt="" class="logo__img" />
+      <div class="wrapper">
+        <div class="container header--inner">
+          <a href="" class="logo">
+            <img src="./assets/images/Untitled.png" alt="" class="logo__img" />
+          </a>
+          <!-- Nav PC  -->
+          <nav class="navbar hide-on-mobile-tablet">
+            <ul class="navbar__list">
+              <li class="navbar__item">
+                <a href="index.html" class="navbar__item-link active"
+                  ><i class="navbar__icon fa-solid fa-house-chimney"></i>
                 </a>
-                <nav class="navbar">
-                <ul class="navbar__list">
-                    <li class="navbar__item">
-                    <a href="index.html" class="navbar__item-link"
-                        ><i class="navbar__icon fa-solid fa-house-chimney"></i>
+              </li>
+              <li class="navbar__item">
+                <a href="" class="navbar__item-link">
+                  <span>Giới thiệu</span>
+                  <i class="navbar__icon fa-sharp fa-solid fa-angle-down"></i>
+                </a>
+                <ul class="sub--nav__list">
+                  <li class="sub--nav__item">
+                    <a href="" class="sub--nav__item-link">
+                      <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                      ></i>
+                      <span>Đào tạo</span>
                     </a>
-                    </li>
-                    <li class="navbar__item">
-                    <a href="" class="navbar__item-link active">
-                        <span>Giới thiệu</span>
-                        <i class="navbar__icon fa-sharp fa-solid fa-angle-down"></i>
+                  </li>
+                  <li class="sub--nav__item">
+                    <a href="teaching_staff.html" class="sub--nav__item-link">
+                      <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                      ></i>
+                      <span>Đội ngũ Giảng viên</span>
                     </a>
-                    <ul class="sub--nav__list">
+                  </li>
+                  <li class="sub--nav__item">
+                    <a href="organizational_structure.html" class="sub--nav__item-link">
+                      <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                      ></i>
+                      <span>Cơ cấu tổ chức</span>
+                    </a>
+                  </li>
+                  <li class="navbar-2nd">
+                    <a href="" class="sub--nav__item-link">
+                        <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                        ></i>
+                        <span>Các bộ môn</span>
+                    </a>    
+                    <ul class="sub--nav__list-2nd nav_child-2nd">
                         <li class="sub--nav__item">
-                        <a href="" class="sub--nav__item-link">
-                            <i
-                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                            ></i>
-                            <span>Đào tạo</span>
-                        </a>
-                        </li>
-                        <li class="sub--nav__item ">
-                        <a href="teaching_staff.html" class="sub--nav__item-link sub--nav__item-active">
-                            <i
-                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                            ></i>
-                            <span>Đội ngũ Giảng viên</span>
-                        </a>
-                        </li>
-                        <li class="sub--nav__item">
-                        <a href="organizational_structure.html" class="sub--nav__item-link">
-                            <i
-                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                            ></i>
-                            <span>Cơ cấu tổ chức</span>
-                        </a>
-                        </li>
-                        <li class="navbar-2nd">
                             <a href="" class="sub--nav__item-link">
                                 <i
                                 class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
                                 ></i>
-                                <span>Các bộ môn</span>
-                            </a>    
-                            <ul class="sub--nav__list-2nd nav_child-2nd">
-                                <li class="sub--nav__item">
-                                    <a href="" class="sub--nav__item-link">
-                                        <i
-                                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                                        ></i>
-                                        <span>Khoa học máy tính</span>
-                                    </a>                                   
-                                </li>
-                                <li class="sub--nav__item">
-                                    <a href="" class="sub--nav__item-link">
-                                        <i
-                                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                                        ></i>
-                                        <span>Công nghệ phần mềm</span>
-                                    </a>                                   
-                                </li>
-                                <li class="sub--nav__item">
-                                    <a href="" class="sub--nav__item-link">
-                                        <i
-                                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                                        ></i>
-                                        <span>Mạng & Truyền thông</span>
-                                    </a>                                   
-                                </li>
-                            </ul>
+                                <span>Khoa học máy tính</span>
+                            </a>                                   
+                        </li>
+                        <li class="sub--nav__item">
+                            <a href="" class="sub--nav__item-link">
+                                <i
+                                class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                                ></i>
+                                <span>Công nghệ phần mềm</span>
+                            </a>                                   
+                        </li>
+                        <li class="sub--nav__item">
+                            <a href="" class="sub--nav__item-link">
+                                <i
+                                class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                                ></i>
+                                <span>Mạng & Truyền thông</span>
+                            </a>                                   
                         </li>
                     </ul>
-                    </li>
-                    <li class="navbar__item">
-                    <a href="" class="navbar__item-link"
-                        ><span>Đơn vị</span>
-                        <i class="navbar__icon fa-sharp fa-solid fa-angle-down"></i
-                    ></a>
-                    <ul class="sub--nav__list">
-                        <li class="sub--nav__item">
-                        <a href="" class="sub--nav__item-link">
-                            <i
-                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                            ></i>
-                            <span>Về nhà trường </span>
-                        </a>
-                        </li>
-                        <li class="sub--nav__item">
-                        <a href="" class="sub--nav__item-link">
-                            <i
-                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                            ></i>
-                            <span>Sứ mạng, Tầm nhìn và Giá trị cốt lõi</span>
-                        </a>
-                        </li>
-                        <li class="sub--nav__item">
-                        <a href="" class="sub--nav__item-link">
-                            <i
-                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                            ></i>
-                            <span>Triết lý giáo dục</span>
-                        </a>
-                        </li>
-                        <li class="sub--nav__item">
-                        <a href="" class="sub--nav__item-link">
-                            <i
-                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                            ></i>
-                            <span>Thông điệp từ Hiệu trưởng</span>
-                        </a>
-                        </li>
-                    </ul>
-                    </li>
-                    <li class="navbar__item">
-                    <a href="" class="navbar__item-link"
-                        >Đào tạo
-                        <i class="navbar__icon fa-sharp fa-solid fa-angle-down"></i
-                    ></a>
-                    <ul class="sub--nav__list">
-                        <li class="sub--nav__item">
-                        <a href="" class="sub--nav__item-link">
-                            <i
-                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                            ></i>
-                            <span>Về nhà trường </span>
-                        </a>
-                        </li>
-                        <li class="sub--nav__item">
-                        <a href="" class="sub--nav__item-link">
-                            <i
-                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                            ></i>
-                            <span>Sứ mạng, Tầm nhìn và Giá trị cốt lõi</span>
-                        </a>
-                        </li>
-                        <li class="sub--nav__item">
-                        <a href="" class="sub--nav__item-link">
-                            <i
-                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                            ></i>
-                            <span>Triết lý giáo dục</span>
-                        </a>
-                        </li>
-                        <li class="sub--nav__item">
-                        <a href="" class="sub--nav__item-link">
-                            <i
-                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                            ></i>
-                            <span>Thông điệp từ Hiệu trưởng</span>
-                        </a>
-                        </li>
-                    </ul>
-                    </li>
-                    <li class="navbar__item">
-                    <a href="" class="navbar__item-link"
-                        ><span>Nghiên cứu Khoa học</span>
-                        <i class="navbar__icon fa-sharp fa-solid fa-angle-down"></i>
-                    </a>
-                    <ul class="sub--nav__list">
-                        <li class="sub--nav__item">
-                        <a href="" class="sub--nav__item-link">
-                            <i
-                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                            ></i>
-                            <span>Về nhà trường </span>
-                        </a>
-                        </li>
-                        <li class="sub--nav__item">
-                        <a href="" class="sub--nav__item-link">
-                            <i
-                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                            ></i>
-                            <span>Sứ mạng, Tầm nhìn và Giá trị cốt lõi</span>
-                        </a>
-                        </li>
-                        <li class="sub--nav__item">
-                        <a href="" class="sub--nav__item-link">
-                            <i
-                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                            ></i>
-                            <span>Triết lý giáo dục</span>
-                        </a>
-                        </li>
-                        <li class="sub--nav__item">
-                        <a href="" class="sub--nav__item-link">
-                            <i
-                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                            ></i>
-                            <span>Thông điệp từ Hiệu trưởng</span>
-                        </a>
-                        </li>
-                    </ul>
-                    </li>
-                    <li class="navbar__item">
-                    <a href="" class="navbar__item-link"
-                        ><span>Hợp tác quốc tế</span>
-                        <i class="navbar__icon fa-sharp fa-solid fa-angle-down"></i
-                    ></a>
-                    <ul class="sub--nav__list">
-                        <li class="sub--nav__item">
-                        <a href="" class="sub--nav__item-link">
-                            <i
-                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                            ></i>
-                            <span>Về nhà trường </span>
-                        </a>
-                        </li>
-                        <li class="sub--nav__item">
-                        <a href="" class="sub--nav__item-link">
-                            <i
-                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                            ></i>
-                            <span>Sứ mạng, Tầm nhìn và Giá trị cốt lõi</span>
-                        </a>
-                        </li>
-                        <li class="sub--nav__item">
-                        <a href="" class="sub--nav__item-link">
-                            <i
-                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                            ></i>
-                            <span>Triết lý giáo dục</span>
-                        </a>
-                        </li>
-                        <li class="sub--nav__item">
-                        <a href="" class="sub--nav__item-link">
-                            <i
-                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                            ></i>
-                            <span>Thông điệp từ Hiệu trưởng</span>
-                        </a>
-                        </li>
-                    </ul>
-                    </li>
-                    <li class="navbar__item">
-                    <a href="" class="navbar__item-link"><span>Sinh viên</span></a>
-                    </li>
-                    <li class="navbar__item">
-                    <a href="info_news.html" class="navbar__item-link"
-                        ><span>Tin tức</span>
-                        <i class="navbar__icon fa-sharp fa-solid fa-angle-down"></i
-                    ></a>
-                    <ul class="sub--nav__list">
-                        <li class="sub--nav__item">
-                        <a href="" class="sub--nav__item-link">
-                            <i
-                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                            ></i>
-                            <span>Thông báo</span>
-                        </a>
-                        </li>
-                        <li class="sub--nav__item">
-                        <a href="" class="sub--nav__item-link">
-                            <i
-                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                            ></i>
-                            <span>Sự kiện</span>
-                        </a>
-                        </li>
-                        <li class="sub--nav__item">
-                        <a href="" class="sub--nav__item-link">
-                            <i
-                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                            ></i>
-                            <span>Đào tạo</span>
-                        </a>
-                        </li>
-                        <li class="sub--nav__item">
-                        <a href="" class="sub--nav__item-link">
-                            <i
-                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                            ></i>
-                            <span>Khoa học công nghệ</span>
-                        </a>
-                        </li>
-                        <li class="sub--nav__item">
-                        <a href="" class="sub--nav__item-link">
-                            <i
-                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                            ></i>
-                            <span>Semina</span>
-                        </a>
-                        </li>
-                        <li class="sub--nav__item">
-                        <a href="" class="sub--nav__item-link">
-                            <i
-                            class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
-                            ></i>
-                            <span>Tuyển dụng</span>
-                        </a>
-                        </li>
-                    </ul>
-                    </li>
+                </li>
                 </ul>
-                </nav>
-            </div>
+              </li>
+              <li class="navbar__item">
+                <a href="" class="navbar__item-link"
+                  ><span>Đơn vị</span>
+                  <i class="navbar__icon fa-sharp fa-solid fa-angle-down"></i
+                ></a>
+                <ul class="sub--nav__list">
+                  <li class="sub--nav__item">
+                    <a href="" class="sub--nav__item-link">
+                      <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                      ></i>
+                      <span>Về nhà trường </span>
+                    </a>
+                  </li>
+                  <li class="sub--nav__item">
+                    <a href="" class="sub--nav__item-link">
+                      <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                      ></i>
+                      <span>Sứ mạng, Tầm nhìn và Giá trị cốt lõi</span>
+                    </a>
+                  </li>
+                  <li class="sub--nav__item">
+                    <a href="" class="sub--nav__item-link">
+                      <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                      ></i>
+                      <span>Triết lý giáo dục</span>
+                    </a>
+                  </li>
+                  <li class="sub--nav__item">
+                    <a href="" class="sub--nav__item-link">
+                      <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                      ></i>
+                      <span>Thông điệp từ Hiệu trưởng</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navbar__item">
+                <a href="" class="navbar__item-link"
+                  >Đào tạo
+                  <i class="navbar__icon fa-sharp fa-solid fa-angle-down"></i
+                ></a>
+                <ul class="sub--nav__list">
+                  <li class="sub--nav__item">
+                    <a href="" class="sub--nav__item-link">
+                      <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                      ></i>
+                      <span>Về nhà trường </span>
+                    </a>
+                  </li>
+                  <li class="sub--nav__item">
+                    <a href="" class="sub--nav__item-link">
+                      <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                      ></i>
+                      <span>Sứ mạng, Tầm nhìn và Giá trị cốt lõi</span>
+                    </a>
+                  </li>
+                  <li class="sub--nav__item">
+                    <a href="" class="sub--nav__item-link">
+                      <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                      ></i>
+                      <span>Triết lý giáo dục</span>
+                    </a>
+                  </li>
+                  <li class="sub--nav__item">
+                    <a href="" class="sub--nav__item-link">
+                      <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                      ></i>
+                      <span>Thông điệp từ Hiệu trưởng</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navbar__item">
+                <a href="" class="navbar__item-link"
+                  ><span>Nghiên cứu Khoa học</span>
+                  <i class="navbar__icon fa-sharp fa-solid fa-angle-down"></i>
+                </a>
+                <ul class="sub--nav__list">
+                  <li class="sub--nav__item">
+                    <a href="" class="sub--nav__item-link">
+                      <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                      ></i>
+                      <span>Về nhà trường </span>
+                    </a>
+                  </li>
+                  <li class="sub--nav__item">
+                    <a href="" class="sub--nav__item-link">
+                      <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                      ></i>
+                      <span>Sứ mạng, Tầm nhìn và Giá trị cốt lõi</span>
+                    </a>
+                  </li>
+                  <li class="sub--nav__item">
+                    <a href="" class="sub--nav__item-link">
+                      <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                      ></i>
+                      <span>Triết lý giáo dục</span>
+                    </a>
+                  </li>
+                  <li class="sub--nav__item">
+                    <a href="" class="sub--nav__item-link">
+                      <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                      ></i>
+                      <span>Thông điệp từ Hiệu trưởng</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navbar__item">
+                <a href="" class="navbar__item-link"
+                  ><span>Hợp tác quốc tế</span>
+                  <i class="navbar__icon fa-sharp fa-solid fa-angle-down"></i
+                ></a>
+                <ul class="sub--nav__list">
+                  <li class="sub--nav__item">
+                    <a href="" class="sub--nav__item-link">
+                      <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                      ></i>
+                      <span>Về nhà trường </span>
+                    </a>
+                  </li>
+                  <li class="sub--nav__item">
+                    <a href="" class="sub--nav__item-link">
+                      <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                      ></i>
+                      <span>Sứ mạng, Tầm nhìn và Giá trị cốt lõi</span>
+                    </a>
+                  </li>
+                  <li class="sub--nav__item">
+                    <a href="" class="sub--nav__item-link">
+                      <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                      ></i>
+                      <span>Triết lý giáo dục</span>
+                    </a>
+                  </li>
+                  <li class="sub--nav__item">
+                    <a href="" class="sub--nav__item-link">
+                      <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                      ></i>
+                      <span>Thông điệp từ Hiệu trưởng</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navbar__item">
+                <a href="" class="navbar__item-link"><span>Sinh viên</span></a>
+              </li>
+              <li class="navbar__item">
+                <a href="info_news.html" class="navbar__item-link"
+                  ><span>Tin tức</span>
+                  <i class="navbar__icon fa-sharp fa-solid fa-angle-down"></i
+                ></a>
+                <ul class="sub--nav__list">
+                  <li class="sub--nav__item">
+                    <a href="" class="sub--nav__item-link">
+                      <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                      ></i>
+                      <span>Thông báo</span>
+                    </a>
+                  </li>
+                  <li class="sub--nav__item">
+                    <a href="" class="sub--nav__item-link">
+                      <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                      ></i>
+                      <span>Sự kiện</span>
+                    </a>
+                  </li>
+                  <li class="sub--nav__item">
+                    <a href="" class="sub--nav__item-link">
+                      <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                      ></i>
+                      <span>Đào tạo</span>
+                    </a>
+                  </li>
+                  <li class="sub--nav__item">
+                    <a href="" class="sub--nav__item-link">
+                      <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                      ></i>
+                      <span>Khoa học công nghệ</span>
+                    </a>
+                  </li>
+                  <li class="sub--nav__item">
+                    <a href="" class="sub--nav__item-link">
+                      <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                      ></i>
+                      <span>Semina</span>
+                    </a>
+                  </li>
+                  <li class="sub--nav__item">
+                    <a href="" class="sub--nav__item-link">
+                      <i
+                        class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"
+                      ></i>
+                      <span>Tuyển dụng</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
         </div>
+        <!-- Nav mobile - tablet  -->
+        <nav class="navbar-swap">
+          <div class="navbar-btn display-on-mobile-tablet">
+            <label for="navbar-btn--input" class="navbar-btn--open">
+              <i class="fas fa-bars"></i>
+            </label>
+            <label for="navbar-btn--input" class="navbar-btn--close">
+              <i class="fas fa-times"></i>
+            </label>
+            <input type="checkbox" name="btn" id="navbar-btn--input" class="navbar-input" hidden>
+            <label for="navbar-btn--input" class="navbar__overlay"></label>
+            <nav class="navbar-mobile-tablet">
+              <ul class="navbar-list">
+                <li>
+                  <a href=""><span class="nav-big__title active">TRANG CHỦ</span></a>
+                </li>
+                <li>
+                  <span class="nav-big__title">Giới thiệu</span>
+                  <ul class="navbar-list-r2">
+                    <li>
+                      <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                      <span><a href=""> Tổng quan</a></span>
+                    </li>
+                    <li>
+                      <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                      <span><a href="">Đội ngũ giảng viên</a> </span>
+                    </li>
+                    <li>
+                      <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                      <span><a href="">Cơ cấu tổ chức</a></span>
+                    </li>
+                    <li class="nav-lv-3">
+                      <p>
+                        <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                        <span>Các bộ môn</span>
+                      </p>
+                      <ul class="navbar-list-r3">
+                        <li>
+                          <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                          <span><a href="">Khoa học máy tính</a></span>
+                        </li>
+                        <li>
+                          <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                          <span><a href="">Công nghệ phần mềm</a></span>
+                        </li>
+                        <li>
+                          <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                          <span><a href="">Mạng máy tính</a></span>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <span class="nav-big__title">Đào tạo</span>
+                  <ul class="navbar-list-r2">
+                    <li>
+                      <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                      <span><a href="">Đào tạo đại học</a></span>
+                    </li>
+                    <li>
+                      <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                      <span><a href="">Đào tạo sau đại học</a> </span>
+                    </li>
+                    <li>
+                      <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                      <span><a href="">Cơ cấu tổ chức</a></span>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href=""><span class="nav-big__title">Nghiên cứu khoa học</span></a>
+                </li>
+                <li>
+                  <a href=""><span class="nav-big__title">Đoàn, hội</span></a>
+                </li>
+                <li>
+                  <span class="nav-big__title">Tin tức, thông báo</span>
+                  <ul class="navbar-list-r2">
+                    <li>
+                      <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                      <span><a href="">Tin tức</a></span>
+                    </li>
+                    <li>
+                      <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                      <span><a href="">Thông báo</a> </span>
+                    </li>
+                    <li>
+                      <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                      <span><a href="">Học bổng</a></span>
+                    </li>
+                    <li>
+                      <i class="sub--nav__icon sfa-sharp fa-solid fa-angle-right"></i>
+                      <span><a href="">Việc làm</a></span>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href=""><span class="nav-big__title">Kế hoạch công tác</span></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <div class="teaching_staff">
@@ -500,8 +606,8 @@
             </div>
         </div>
     </div>
-    <!-- contact -->
-    <section class="contact">
+     <!-- contact -->
+     <section class="contact">
         <div class="wrapper">
           <div class="container contact-inner">
             <div class="contact-btn">
@@ -512,11 +618,11 @@
               </a>
               <div class="contact-btn-border contact-btn-border-right"></div>
             </div>
-            <ul class="contact__list">
-              <li class="contact__item">
+            <ul class="contact__list row">
+              <li class="contact__item col l-3 m-6 s-12">
                 <img src="./assets/images/Logo-footer.png" alt=""  />
               </li>
-              <li class="contact__item">
+              <li class="contact__item col l-3 m-6 s-12">
                 <h4 class="contact__item-heading">Liên hệ với chúng tôi</h4>
                 <div class="contact__new">
                   <p>
@@ -535,7 +641,7 @@
                   </div>
                 </div>
               </li>
-              <li class="contact__item">
+              <li class="contact__item col l-2 m-6 s-12">
                 <h4 class="contact__item-heading">Liên kết hữu ích</h4>
                 <ul class="contact__list-link">
                   <li class="contact__item-link">
@@ -570,7 +676,7 @@
                   </li>
                 </ul>
               </li>
-              <li class="contact__item">
+              <li class="contact__item col l-3 m-6 s-12">
                 <h4 class="contact__item-heading">Kết nối với chúng tôi</h4>
                 <ul class="contact__list-conntect">
                   <li class="contact__item-connect">
@@ -608,23 +714,23 @@
             </ul>
           </div>
         </div>
-      </section>
-      <!-- footer -->
-      <footer class="footer">
-        <div class="wrapper">
-          <div class="container footer-inner">
-            <div class="footer__copy">
-              <p>
-                Copyright © 2012. Khoa Công nghệ Thông tin - Trường Đại học Khoa
-                học Huế.
-              </p>
-              <p>Địa chỉ: 77 Nguyễn Huệ, Huế, Việt Nam.</p>
-              <p>Lượt truy cập: 28,580,684 - Online: 004</p>
-            </div>
-          </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+    <div class="wrapper">
+        <div class="container footer-inner">
+        <div class="footer__copy">
+            <p>
+            Copyright © 2022. Khoa Công nghệ Thông tin - Trường Đại học Khoa
+            học Huế.
+            </p>
+            <p>Địa chỉ: 77 Nguyễn Huệ, Huế, Việt Nam.</p>
+            <p>Lượt truy cập: 28,580,684 - Online: 004</p>
         </div>
-        <a id="go-to-top" href="#goback"><i class="fas fa-angle-up"></i></a>
-      </footer>
+        </div>
+    </div>
+    <a id="go-to-top" href="#goback"><i class="fas fa-angle-up"></i></a>
+    </footer>
       <!-- js -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="./assets/slick-1.8.1/slick/slick.min.js"></script>

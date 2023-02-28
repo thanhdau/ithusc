@@ -71,7 +71,10 @@ max-width: 41.66667%;
 flex: 0 0 50%;
 max-width: 50%;
 }
-
+.s-6-opt{
+    flex: 0 0 46%;
+    max-width: 46%;
+}
 .s-7 {
 flex: 0 0 58.33333%;
 max-width: 58.33333%;
@@ -309,6 +312,10 @@ margin-left: 91.66667%;
     .l-2 {
         flex: 0 0 16.66667%;
         max-width: 16.66667%;
+    }
+    .l-2-opt{
+        flex: 0 0 13.3%;
+        max-width: 13.3%;
     }
     .l-2-4 {
         flex: 0 0 20%;
