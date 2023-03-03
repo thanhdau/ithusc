@@ -401,6 +401,9 @@
     .current-week__table{
         display: none;
     }
+    .current-week__wrap{
+        display: block;
+    }
     .current-week__table-mb{
         border: 1px solid #ececef;
     }
@@ -454,5 +457,8 @@
     /*university_train*/
     .train__content > ul > li i{
         margin-bottom: 65px;
+    }
+    .curri__table{
+        font-size: 8px;
     }
 }
