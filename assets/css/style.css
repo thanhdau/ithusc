@@ -1082,12 +1082,12 @@
 }
 .train__content-ul >li {
   display: flex;
-  align-items: center;
+  align-items: start;
   padding-bottom: 20px;
 }
 .train__content-i{
   padding-left: 20px;
-  line-height:26px;
+  line-height: 37px;
   font-weight: 600;
 }
 .train__content > ul > li{
@@ -1100,6 +1100,8 @@
   padding: 12px;
   font-size: 12px;
   border-radius: 50%;
+  height: 35px;
+  margin-top: 2px;
 }
 .curri__table {
   font-size: 16px;

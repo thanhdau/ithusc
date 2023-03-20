@@ -214,7 +214,7 @@
 }
   
 .navbar-list li:hover {
-    background: var(--gray-color);
+    /* background: var(--gray-color); */
 }
   
 .navbar-link i{
@@ -249,7 +249,7 @@
     padding:5px 0;
 } */
  .navbar-list-r2 > li, .navbar-list-r3 > li{
-    margin: 15px 0;
+    line-height: 33px;
 }
 .sub--nav__icon{
     padding: 3px 5px 0 0;
@@ -456,7 +456,7 @@
     }
     /*university_train*/
     .train__content > ul > li i{
-        margin-bottom: 65px;
+        /* margin-bottom: 65px; */
     }
     .curri__table{
         font-size: 8px;
